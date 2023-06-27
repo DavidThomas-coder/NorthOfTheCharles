@@ -20,7 +20,7 @@ class Comment extends Model {
 
             post: {
                 relation: Model.BelongsToOneRelation,
-                modelClass: Models.Post,
+                modelClass: Post,
                 join: {
                     from: 'comments.postId',
                     to: 'posts.id'
