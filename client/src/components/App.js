@@ -7,6 +7,7 @@ import "../assets/scss/main.scss";
 import RegistrationForm from "./registration/RegistrationForm";
 import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
+import DeveloperPage from "./DevelopersPage";
 
 import Homepage from "./Homepage";
 
@@ -31,6 +32,7 @@ const App = (props) => {
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/home" component={Homepage} />
+        <Route exact path="/developers" component={DeveloperPage} />
         <Route exact path="/users/new" component={RegistrationForm} />
         <Route exact path="/user-sessions/new" component={SignInForm} />
       </Switch>
