@@ -1,4 +1,4 @@
-const Models = require('./models');
+const Model = require('./Model.js');
 
 class Comment extends Model {
     static get tableName() {
