@@ -29,4 +29,4 @@ class Friendship extends Model {
     }
 }
 
-module.exports = UserChat
+module.exports = Friendship
