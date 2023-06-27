@@ -3,7 +3,7 @@ const Model = require("./Model")
 
 class Post extends Model {
     static get tableName() {
-        return "post"
+        return "posts"
     }
     static get jsonSchema(){
         return {
