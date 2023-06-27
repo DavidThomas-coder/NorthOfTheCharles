@@ -47,4 +47,4 @@ class Post extends Model {
 }
 
 
-module.export = Post
+module.exports = Post
