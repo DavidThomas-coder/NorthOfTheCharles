@@ -45,6 +45,57 @@ class User extends uniqueFunc(Model) {
 
     return serializedJson;
   }
+
+  static get relationMappings() {
+    const { Friend, Friendship, Post, Comment, Like } = require ("./index.js")
+
+    return {
+      friends: {
+        relation: Model.ManyToManyRelation,
+        modelClass: Friend,
+        join: {
+          from: "users.id",
+          through: {
+            from: "friendships.userId",
+            to: "friendships.friendId"
+          },
+          to: "friends.id"
+        }
+      },
+      posts: {
+        relation: Model.HasManyRelation,
+        modelClass: Post,
+        join: {
+          from: "users.id",
+          to: "posts.userId"
+        }
+      },
+      comments: {
+        relation: Model.HasManyRelation,
+        modelClass: Comment,
+        join: {
+          from: "users.id",
+          to: "comments.userId"
+        }
+      },
+      friendships: {
+        relation: Model.HasManyRelation,
+        modelClass: Friendship,
+        join: {
+          from: "users.id",
+          to: "friendships.userId"
+        }
+      },
+      likes: {
+        relation: Model.HasManyRelation,
+        modelClass: Like,
+        join: {
+          from: "users.id",
+          to: "likes.userId"
+        }
+      }
+    }
+  }
 }
 
 module.exports = User;
