@@ -12,3 +12,23 @@
   -moz-tab-size: 4;
   tab-size: 4;
 }
+
+//color palette
+$main-background-color: #FFFCF2;
+$grey: #CCC5B9;
+$brick-red: #C54D4D ;
+$sea-green: #53945E;
+$light-blue: #507BB7;
+
+body{
+  background-color: $main-background-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+}
+
+.developed-by{
+  text-align: center;
+  font-size: small;
+}

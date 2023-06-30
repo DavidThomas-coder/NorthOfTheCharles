@@ -4,7 +4,7 @@ import { Link } from'react-router-dom';
 const Homepage = (props) => {
     return (
         <div>
-            <h1>North of the Charles</h1>
+            <h1>North Of The Charles</h1>
             <h4>Post Your Northern Views</h4>
 
             <div className='developed-by'>
