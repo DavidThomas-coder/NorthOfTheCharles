@@ -10,7 +10,7 @@ import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
 import DeveloperPage from "./DevelopersPage";
 import UserProfile from "./UserProfile";
-
+import Posts from "./layout/Posts";
 import Homepage from "./Homepage";
 
 const App = (props) => {
@@ -34,6 +34,7 @@ const App = (props) => {
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/home" component={Homepage} />
+        <Route exact path="/posts"  component={Posts}user={currentUser}/>
         <Route exact path="/developers" component={DeveloperPage} />
         <Route exact path="/users/new" component={RegistrationForm} />
         <Route exact path="/user-sessions/new" component={SignInForm} />
