@@ -6,10 +6,10 @@ const Homepage = (props) => {
         <div>
             <div className="cell small-12 grid-x align-middle">
                 <div className="cell small-6">
-                    <img src="https://i.imgur.com/nUIsZWu.png" alt="river image" />
+                    <img src="https://i.imgur.com/iEYaJFB.png" alt="river image" />
                 </div>
                 <div className="cell small-6">
-                    <img src="https://i.imgur.com/j90TSrY.png" alt="notc info" style={{ marginTop: '-20px' }} />
+                    <img src="https://i.imgur.com/lCJqaIy.png" alt="notc info" />
                 </div>
             </div>
 
