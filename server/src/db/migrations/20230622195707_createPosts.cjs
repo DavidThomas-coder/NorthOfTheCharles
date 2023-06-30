@@ -16,17 +16,6 @@ exports.up = async (knex) => {
             .notNullable()
             .index()
             .references("users.id")
-        table
-            .bigInteger("likeId")
-            .unsigned()
-            .notNullable()
-            .index()
-            .references("likes.id")
-        table
-            .bigInteger("commentId")
-            .unsigned()
-            .notNullable()
-            .index()
             .references("comments.id")
         table.timestamp("createdAt").notNullable().defaultTo(knex.fn.now())
         table.timestamp("updatedAt").notNullable().defaultTo(knex.fn.now())
