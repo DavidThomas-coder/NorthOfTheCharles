@@ -8,6 +8,7 @@ class UserSeeder {
                 firstName: "Todd",
                 lastName: "Garrison",
                 username: "ToddG",
+                city: "Somerville",
                 password: "123"
             },
             {
@@ -15,6 +16,7 @@ class UserSeeder {
                 firstName: "Solomon",
                 lastName: "Montagno",
                 username: "SolomonM",
+                city: "Somerville",
                 password: "123"
             },
             {
@@ -22,6 +24,7 @@ class UserSeeder {
                 firstName: "David",
                 lastName: "Thomas",
                 username: "DavidT",
+                city: "Somerville",
                 password: "123"
             }
         ]
