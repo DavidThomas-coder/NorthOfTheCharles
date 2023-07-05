@@ -18,6 +18,7 @@ exports.up = async (knex) => {
             .unsigned()
             .notNullable()
             .index()
+            .references("comments.id")
     })
 }
 
