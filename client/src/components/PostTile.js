@@ -14,7 +14,7 @@ const PostTile = (props) => {
                 <p className="post-media">{post.mediaURL}</p>
                 <p className="post-body">{post.postBody}</p>
             </div>
-            </div>
+        </div>
         );
 };
 
