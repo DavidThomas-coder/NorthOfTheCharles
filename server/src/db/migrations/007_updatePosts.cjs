@@ -6,7 +6,7 @@
  * @param {Knex} knex
  */
 exports.up = async (knex) => {
-    return knex.schema.alterTable("users", (table) => {
+    return knex.schema.alterTable("posts", (table) => {
         table
             .bigInteger("likeId")
             .unsigned()
@@ -26,7 +26,7 @@ exports.up = async (knex) => {
  * @param {Knex} knex
  */
 exports.down = (knex) => {
-    return knex.schema.alterTable("users", (table) => {
+    return knex.schema.alterTable("posts", (table) => {
         table.dropColumn("likeId")
         table.dropColumn("commentId")
     })
