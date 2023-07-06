@@ -10,6 +10,7 @@ exports.up = async (knex) => {
         table.bigIncrements("id")
         table.string("type").notNullable()
         table.string("mediaURL").notNullable()
+        table.text("postBody").notNullable()
         table
             .bigInteger("userId")
             .unsigned()
