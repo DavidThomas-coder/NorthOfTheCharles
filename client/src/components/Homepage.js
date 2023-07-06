@@ -28,7 +28,7 @@ const Homepage = (props) => {
             <PostTile
             key={post.id}
             post={post}
-            user={users[post.userId]} // Pass the corresponding user data as props
+            user={users[post.userId]}
             />
         ))
         ) : (
