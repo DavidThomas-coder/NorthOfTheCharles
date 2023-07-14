@@ -8,16 +8,16 @@ class PostSeeder {
                 mediaURL: "https://i.imgur.com/qVSpi2V.png",
                 postBody: "Here is my first post",
                 userId: 1,
-                likeId: null,
-                commentId: null
+                likeId: 2,
+                commentId: 2
             },
             {
                 type: "image",
                 mediaURL: "https://i.imgur.com/bVywFrr.png",
                 postBody: "LOLOL POST",
                 userId: 2,
-                likeId: null,
-                commentId: null
+                likeId: 2,
+                commentId: 2
             }
         ]
         for (const singlePostData of postsData) {
