@@ -15,9 +15,9 @@ class PostSeeder {
             }
         ]
         for (const singlePostData of postsData) {
-            const currentPost = await Post.query().findOne({email: singleUserData.email })
-            if (!currentUser) {
-                await User.query().insert(singleUserData)
+            const currentPost = await Post.query().findOne({type: singlePostData.type })
+            if (!currentPost) {
+                await Post.query().insert(singlePostData)
             }
         }
     }
